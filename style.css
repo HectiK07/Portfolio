@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  Arial, Helvetica;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.main {
+    width: 100%;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/** NAVBAR **/
+
+#nav  {
+    height: 80px;
+    width: 100%;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.dropdown {
+    display: none;
+}
+
+li {
+    float: left;
+    list-style: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+}
+
+li a:hover {
+    border-bottom: 1px solid white;
+}
+
+.container {
+    display: none;
+}
+
+/** Hero Main **/
+
+.hero_main {
+    text-transform: uppercase;
+    color: white;
+    font-size: 4.5rem;
+    margin: 200px 0 0 100px;
+    line-height: 1;
+    opacity: 0.7;
+}
+
+
+
+.bounding {
+    width: fit-content;
+    overflow: hidden;
+}
+
+.boundingelem {
+    transform: translateY(100%);
+}
+
+.textbox {
+    width: fit-content;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: end;
+    padding-left: 70px;
+    font-size: 4rem;
+}
+
+#fresher {
+    font-size: 2rem;
+}
+
+/** Hero Footer **/
+
+.hero_footer {
+    margin-top: 375px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avail {
+    color: white;
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.3rem;
+    margin: 30px 50px;
+    border-bottom: 1px solid transparent;
+    padding: 1rem;
+}
+
+.avail:hover {
+    border-bottom: 1px solid white;
+}
+
+.avail i {
+    margin-left: 2px;
+    padding-top: 4px;
+}
+
+.circles {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin: 30px 50px; 
+    gap: 10px;
+}
+
+.circle {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+/** Second Page **/
+
+.second {
+    /* height: vh; */
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.background_sec {
+    width: 95%;
+    height: 100%;
+    background-color: white;
+    /* border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem; */
+    border-radius: 4rem;
+    margin-top: 1rem;
+}
+
+.head_sec {
+    color: transparent;
+    margin: 5rem 0 0 5rem ;
+    font-size: 3rem;
+    -webkit-text-stroke: 2px black;
+}
+
+.feature_pro {
+    height: 100%;
+    width: 95%;
+    margin: 3rem 5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pro1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    height: 100%;
+    width: 46%;
+    gap: 5rem;
+}
+
+.pro2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    height: 100%;
+    width: 46%;
+    gap: 5rem;
+}
+
+.feature_pro h3 {
+    font-size: 2rem;
+    text-transform: uppercase
+}
+
+
+.project_1 {
+    height: 55rem;
+    width: 70%;
+    background-color: black;
+    border-radius: 3rem;
+    object-fit: cover;
+    background-image: url(amazon.jpg);
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.project_2 {
+    height: 55rem;
+    width: 70%;
+    background-color: black;
+    border-radius: 3rem;
+    background-image: url(currency.jpg);
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.project_3 {
+    height: 50rem;
+    width: 70%;
+    background-color: black;
+    border-radius: 3rem;
+    background-image: url(albert-dera-ILip77SbmOE-unsplash\ \(1\).jpg);
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.project_4 {
+    height: 50rem;
+    width: 70%;
+    background-color: black;
+    border-radius: 3rem;
+    background-image: url(ttt.jpg);
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.project_5 {
+    height: 46rem;
+    width: 70%;
+    background-color: black;
+    border-radius: 3rem;
+    background-image: url(Vision_pro.jpg);
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.non {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.project_6 {
+    height: 46rem;
+    width: 70%;
+    background-color: black;
+    border-radius: 3rem;
+    background-image: url(RPS.jpg);
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/** Third Page **/ 
+
+.third {
+    /* height: 200vh; */
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+}
+
+.background_third {
+    height: 100%;
+    width: 95%;
+    background-color: black;
+    margin-top: 5rem;
+    border-radius: 4rem;
+}
+
+.background_third h3 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 5rem;
+    -webkit-text-stroke: 1px white;
+}
+
+/** Skill Bars **/ 
+
+.skill-name {
+    color: white;
+    font-weight: bold;
+    margin: 0 0 0 300px;
+}
+
+.skill-name img {
+    height: 25px;
+    padding: 8px 5px 0 0;
+}
+
+.skill {
+    margin-top: 5rem;
+}
+
+
+  .skill-bar {
+    position: relative;
+    width: 70%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 30px  0 5rem 300px;
+  }
+  
+  .skill-level_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(0.25turn, #FF0000, #FF7B00, #FFFF00);
+    border-radius: 5px;
+    animation: fill_1 4s forwards;
+  }
+
+  .skill-level_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(0.25turn,#FF0000, #FF7B00, #FFFF00);
+    border-radius: 5px;
+    animation: fill_2 4s forwards;
+  }
+
+  .skill-level_3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(0.25turn,#FF0000, #FF7B00, #FFFF00);
+    border-radius: 5px;
+    animation: fill_3 4s forwards;
+  }
+
+  
+  @keyframes fill_1 {
+    0% {
+      width: 0%;
+    }
+     
+    100% {
+      width: 93%; /* Change this value to represent your skill level */
+    }
+  }
+
+  @keyframes fill_2 {
+    0% {
+      width: 0%;
+    }
+     
+    100% {
+      width: 80%; /* Change this value to represent your skill level */
+    }
+  }
+
+  @keyframes fill_3 {
+    0% {
+      width: 0%;
+    }
+     
+    100% {
+      width: 60%; /* Change this value to represent your skill level */
+    }
+  }
+
+  .forgot {
+    margin: 100px 200px;
+    color: white;
+    opacity: 0.5;
+    text-align: start;
+    text-transform: uppercase;
+  }
+
+  .forgot img {
+    height: 20px;
+    padding: 5px 2px 0 0;
+
+  }
+
+  .forgot h4 {
+    margin-top: 10px;
+  }
+
+  /** Self **/ 
+
+.self {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.self_container {
+    height: 500px;
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pic {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-image: url(Profile_pic.jpg);
+    background-size: cover;
+}
+
+.desc {
+    height: 300px;
+    width: 900px;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc p {
+    text-align: center;
+    font-family: outfit;
+}
+
+/** Contact Me! **/ 
+
+.contact_me {
+    height: 35vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    
+    padding: 50px 50px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+.contact {
+    padding-top: 50px;
+}
+
+.refered {
+    opacity: 0.7;
+    font-size: 1.2rem;
+    margin-left: 200px;
+}
+

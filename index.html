@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="locomotive.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="media_fullhd.css">
+  </head>
+  <body>
+    <div class="minicircle"></div>
+    <div id="main">
+      <div class="hero" id="home">
+        <div id="nav">
+          <a href="#"><h3>Pratik Nirgun</h3></a>
+          <ul>
+            <li class="menu_1">
+              <a href="#home">home</a>
+            </li>
+            <li class="menu_2">
+              <a href="#project">Projects</a>
+            </li>
+            <li class="menu_3">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="menu_4">
+              <a href="#self">Self</a>
+            </li>
+            <li class="menu_5">
+              <a href="#contact">COntact </a>
+            </li>
+          </ul>
+          <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div class="dropdown hidden" id="mydropdown">
+            <a href="#home">Home</a><a href="#project">Projects</a><a href="#skills">Skills</a
+            ><a href="#self">self</a><a href="#contact">COntact</a>
+          </div>
+        </div>
+        <div class="hero_main">
+          <div class="bounding">
+            <h1 class="boundingelem">Frontend</h1>
+          </div>
+          <div class="textbox">
+            <div class="bounding">
+              <h1 class="boundingelem">Web-developer</h1>
+            </div>
+            <div class="bounding">
+              <h5 class="boundingelem" id="fresher">fresher</h5>
+            </div>
+          </div>
+        </div>
+        <div class="hero_footer">
+          <div class="avail">
+            Available for work<i class="ri-arrow-right-up-line"></i>
+          </div>
+          <div class="circles">
+            <div class="circle"><i class="ri-arrow-down-line"></i></div>
+            <div class="circle"><i class="ri-arrow-down-line"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="second" id="project">
+        <div class="background_sec">
+          <div class="head_sec">
+            <h1>Projects</h1>
+          </div>
+          <div class="feature_pro">
+            <div class="pro1">
+              <div class="project_1"></div>
+              <h3>Amazon.com <span class="non">(Non-responsive)</span></h3>
+              <div class="project_3"></div>
+              <h3>Profile Card <span class="non">(Responsive)</span></h3>
+              <div class="project_5"></div>
+              <h3>Vision Pro <span class="non">(Non-responsive)</span></h3>
+            </div>
+            <div class="pro2">
+              <div class="project_2"></div>
+              <h3>currency Coverter <span class="non">(Responsive)</span></h3>
+              <div class="project_4"></div>
+              <h3>tic tac toe <span class="non">(Responsive)</span></h3>
+              <div class="project_6"></div>
+              <h3>rock paper scissor <span class="non">(Responsive)</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="third" id="skills">
+        <div class="background_third">
+          <div class="head_third">
+            <h3>Skills</h3>
+          </div>
+          <div class="skill">
+            <div class="skill-name"><img src="html.png" alt="">HTML</div>
+            <div class="skill-bar">
+              <div class="skill-level_1"></div>
+            </div>
+            <div class="skill-name"><img src="css.png" alt="">CSS</div>
+            <div class="skill-bar">
+              <div class="skill-level_2"></div>
+            </div>
+            <div class="skill-name"><img src="js.png" alt="">JavaScript</div>
+            <div class="skill-bar">
+              <div class="skill-level_3"></div>
+            </div>
+          </div>
+          <div class="forgot">
+            <h4>(Forgot to Mention)</h4>
+            <h4>* Learning... : *</h4>
+            <h4> <img src="react.png" alt="React JS">React Js</h4>
+            <h4> <img src="gsap.png" alt="gsap">GSAP</h4>
+            <h4> <img src="bootstrap.png" alt="">Bootstrap</h4>
+          </div>
+          <div class="self" id="self">
+            <div class="self_container">
+              <div class="pic"></div>
+              <div class="desc">
+                <p>I'm Pratik Uday Nirgun, a 21-year-old web developer who loves
+                  coding, gaming, and exploring 3D modeling. Eager to contribute
+                  creativity and skills to exciting digital projects!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="contact_me" id="contact">
+          <div class="contact">
+            <h3>Contact Me !</h3>
+            <p>Email: nirgunpratik@gmail.com</p>
+            <p>Phone no.: 8928754794</p>
+          </div>
+          <div class="refered">
+              <p>
+            Reference Links :
+            <br>
+            1) <a href="https://www.cynthiaugwu.com/" target="_blank">Cynthia Ugwu</a>
+            <br>
+            2) <a href="https://cuberto.com/" target="_blank">Cuberto.com</a>
+              </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="pop.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
